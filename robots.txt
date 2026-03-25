@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /grey/
+
+Sitemap: https://otoko-jp.github.io/sitemap.xml
