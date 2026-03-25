@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>男塾</title>
+<title>男塾 — 紹介コード・お得情報まとめ</title>
 <meta name="description" content="紹介コード・キャンペーンのお得情報まとめ">
 <meta property="og:type" content="website">
 <meta property="og:title" content="男塾">
@@ -12,23 +12,173 @@
 <link rel="canonical" href="https://otoko-jp.github.io/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"男塾","url":"https://otoko-jp.github.io/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans",sans-serif;line-height:1.8;color:#1a1a1a;background:#fafafa}
-.w{max-width:700px;margin:0 auto;padding:2.5rem 1.25rem;background:#fff;min-height:100vh}
-h1{font-size:1.5rem;margin-bottom:2rem}
-ul{list-style:none}li{padding:1rem 0;border-bottom:1px solid #f0f0f0}
-li a{font-size:1.05rem;font-weight:500;color:#2563eb;text-decoration:none}
-li a:hover{text-decoration:underline}
-.d{color:#6b7280;font-size:.9rem;margin-top:.2rem}
-.m{color:#9ca3af;font-size:.8rem;margin-top:.2rem}
-.empty{color:#999}
-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid #e5e7eb;font-size:.8rem;color:#9ca3af;text-align:center}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+:root{--ink:#0c0c0c;--paper:#f5f2ec;--white:#ffffff;--ash:#e4e0d8;--smoke:#9a9489;--ghost:#c8c3ba;--red:#b91c1c;--red2:#7f1d1d;--red-bright:#f05050}
+body{font-family:'Noto Serif JP','Hiragino Mincho ProN',serif;background:var(--paper);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+#gh{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:2px solid var(--red)}
+.gh-i{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.5rem;height:56px}
+.logo{display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:26px;height:26px;background:var(--red);border-radius:50%;flex-shrink:0}
+.logo-name{font-family:'Yuji Syuku',serif;font-size:1.75rem;color:var(--white);letter-spacing:.06em;line-height:1}
+.logo-tag{font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;color:#ccc;letter-spacing:.18em;text-transform:uppercase;margin-left:.3rem;align-self:flex-end;margin-bottom:.15rem}
+.gnav{display:flex;align-items:center;height:100%}
+.gnav a{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:#fff;padding:0 .9rem;height:56px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:border-color .15s}
+.gnav a:hover{border-bottom-color:var(--red)}
+#cb{background:#161616;border-bottom:1px solid #2a2a2a;overflow-x:auto;scrollbar-width:none}
+#cb::-webkit-scrollbar{display:none}
+.cb-i{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex}
+.ct{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.06em;color:#eee;padding:.65rem 1rem;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.ct:hover{color:var(--white);border-bottom-color:var(--red-bright)}
+.ct.hot{color:var(--red-bright)}
+#sf{background:var(--ink);color:#888;padding:2.5rem 1.5rem 2rem;border-top:2px solid var(--red);margin-top:3rem}
+.sf-i{max-width:1200px;margin:0 auto}
+.sf-logo{font-family:'Yuji Syuku',serif;font-size:1.9rem;color:var(--white);letter-spacing:.06em;margin-bottom:.25rem}
+.sf-logo span{color:var(--red);margin-right:.4rem}
+.sf-tag{font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#444;margin-bottom:1.5rem}
+.sf-links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-bottom:1.5rem}
+.sf-links a{font-family:'Inter',sans-serif;font-size:.66rem;letter-spacing:.08em;color:#555;transition:color .15s}
+.sf-links a:hover{color:var(--white)}
+.sf-copy{font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.1em;color:#333;border-top:1px solid #222;padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center}
+.sf-dot{width:6px;height:6px;border-radius:50%;background:var(--red)}
+@media(max-width:600px){.gh-i{padding:0 1rem}.gnav a{padding:0 .5rem;font-size:.62rem}.logo-tag{display:none}}
+
+#hero{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:1.5px;background:var(--ash);border:1.5px solid var(--ash);max-width:1200px;margin:0 auto 0}
+.hero-main{grid-column:1/3;grid-row:1/3;min-height:340px;background:var(--ink);display:block;position:relative;overflow:hidden;cursor:pointer}
+.hero-sub{min-height:170px;background:#1a1a1a;display:block;position:relative;overflow:hidden;cursor:pointer}
+.hero-info{position:absolute;bottom:0;left:0;right:0;padding:1.2rem 1.4rem;background:linear-gradient(to top,rgba(0,0,0,.85),transparent)}
+.hero-cat{font-family:'Inter',sans-serif;font-size:.58rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--red-bright);margin-bottom:.4rem}
+.hero-title{font-size:1rem;font-weight:700;color:var(--white);line-height:1.45;letter-spacing:.02em}
+.hero-main .hero-title{font-size:1.35rem}
+.main-wrap{max-width:1200px;margin:0 auto;padding:2rem 1.5rem;display:grid;grid-template-columns:1fr 280px;gap:2.5rem}
+.sec-head{display:flex;align-items:center;gap:.8rem;margin:2rem 0 1.1rem}
+.sec-head h2{font-family:'Yuji Syuku',serif;font-size:1.1rem;font-weight:400;letter-spacing:.06em;white-space:nowrap}
+.sec-en{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--smoke)}
+.sec-head::after{content:'';flex:1;height:1px;background:var(--ash)}
+.idx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:1rem}
+.a-card{display:flex;flex-direction:column;gap:.5rem;cursor:pointer}
+.a-card:hover .a-card-title{color:var(--red)}
+.a-card-thumb{aspect-ratio:16/9;background:var(--ink);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.thumb-num{font-family:'Inter',sans-serif;font-size:2.5rem;font-weight:700;color:#ffffff08;letter-spacing:-.05em}
+.a-card-cat{font-family:'Inter',sans-serif;font-size:.58rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.a-card-title{font-size:.88rem;font-weight:700;line-height:1.5;letter-spacing:.02em;transition:color .15s;color:var(--ink)}
+.a-card-date{font-family:'Inter',sans-serif;font-size:.62rem;color:var(--ghost);letter-spacing:.08em;margin-top:auto}
+.al-item{display:grid;grid-template-columns:36px 1fr auto;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--ash);cursor:pointer;align-items:start}
+.al-item:first-child{border-top:1px solid var(--ash)}
+.al-item:hover .al-title{color:var(--red)}
+.al-num{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:300;color:var(--ghost);padding-top:.2rem;text-align:right}
+.al-title{font-size:.9rem;font-weight:700;line-height:1.5;transition:color .15s;margin-bottom:.25rem}
+.al-desc{font-size:.8rem;font-weight:300;color:var(--smoke);line-height:1.6}
+.al-date{font-family:'Inter',sans-serif;font-size:.65rem;color:var(--ghost);white-space:nowrap;padding-top:.2rem;letter-spacing:.06em}
+.empty{color:var(--smoke);padding:2rem 0;text-align:center;font-size:.9rem}
+aside{padding-top:2rem}
+.side-blk{margin-bottom:2.5rem}
+.side-head{font-family:'Yuji Syuku',serif;font-size:1rem;font-weight:400;letter-spacing:.06em;padding-bottom:.6rem;border-bottom:2px solid var(--ink);margin-bottom:1rem;display:flex;align-items:baseline;gap:.5rem}
+.side-en{font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--smoke)}
+.rank-item{display:grid;grid-template-columns:28px 1fr;gap:.6rem;padding:.75rem 0;border-bottom:1px solid var(--ash);align-items:start;cursor:pointer;color:inherit}
+.rank-item:hover .rank-title{color:var(--red)}
+.rank-num{font-family:'Inter',sans-serif;font-size:.78rem;font-weight:700;color:var(--ghost);line-height:1.5}
+.rank-num.top{color:var(--red-bright)}
+.rank-title{font-size:.82rem;font-weight:700;line-height:1.5;transition:color .15s}
+#cb{background:#161616;border-bottom:1px solid #2a2a2a}
+@media(max-width:900px){.main-wrap{grid-template-columns:1fr}aside{padding-top:0}#hero{grid-template-columns:1fr 1fr}.hero-main{grid-column:1/-1;grid-row:auto;min-height:240px}.idx-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){#hero{grid-template-columns:1fr}.hero-sub{display:none}.idx-grid{grid-template-columns:1fr}.main-wrap{padding:1.5rem 1rem}.al-item{grid-template-columns:28px 1fr}}
 </style>
 </head>
 <body>
-<div class="w"><h1>男塾</h1><ul><li><a href="/deals/uber-eats-promotion-code/">Uber Eats プロモーションコード｜初回から4回¥1,500 OFFの使い方と注意点【2026年最新】</a><div class="d">Uber Eatsのプロモーションコード「eats-k3ysylxkm9」で初回から4回の注文が¥1,500 OFF。入力手順・適用条件・お得に使うコツを解説。</div><div class="m"><time datetime="2026-03-25">2026年3月25日</time></div></li><li><a href="/deals/test-draft/">テスト投稿</a><div class="d">テスト用記事です</div><div class="m"><time datetime="2026-03-25">2026年3月25日</time></div></li></ul>
-<footer><p>&copy; 2026 男塾</p></footer>
+<header id="gh">
+  <div class="gh-i">
+    <a class="logo" href="/">
+      <div class="logo-mark"></div>
+      <span class="logo-name">男塾</span>
+      <span class="logo-tag">referral &amp; deals</span>
+    </a>
+    <nav class="gnav">
+      <a href="/">新着</a>
+      <a href="/">紹介コード</a>
+      <a href="/">お得情報</a>
+    </nav>
+  </div>
+</header>
+<div id="cb">
+  <div class="cb-i">
+    <span class="ct hot">紹介コード</span>
+    <span class="ct">銀行・マネー</span>
+    <span class="ct">フリマ・EC</span>
+    <span class="ct">フードデリバリー</span>
+    <span class="ct">投資・証券</span>
+    <span class="ct">クレカ・決済</span>
+    <span class="ct hot">限定コード</span>
+  </div>
 </div>
+
+<div id="hero">
+  <a class="hero-main" href="/deals/uber-eats-promotion-code/">
+    <div class="hero-info">
+      <div class="hero-cat">deals</div>
+      <div class="hero-title">Uber Eats プロモーションコード｜初回から4回¥1,500 OFFの使い方と注意点【2026年最新】</div>
+    </div>
+  </a>
+  
+  <a class="hero-sub" href="/deals/test-draft/">
+    <div class="hero-info">
+      <div class="hero-cat">deals</div>
+      <div class="hero-title">テスト投稿</div>
+    </div>
+  </a>
+</div>
+<div class="main-wrap">
+  <main>
+    
+    <div class="sec-head"><h2>すべての記事</h2><span class="sec-en">All</span></div>
+    
+<a class="al-item" href="/deals/uber-eats-promotion-code/">
+  <div class="al-num">01</div>
+  <div>
+    <div class="al-title">Uber Eats プロモーションコード｜初回から4回¥1,500 OFFの使い方と注意点【2026年最新】</div>
+    <div class="al-desc">Uber Eatsのプロモーションコード「eats-k3ysylxkm9」で初回から4回の注文が¥1,500 OFF。入力手順・適用条件・お得に使うコツを解説。</div>
+  </div>
+  <div class="al-date">2026.03.25</div>
+</a>
+<a class="al-item" href="/deals/test-draft/">
+  <div class="al-num">02</div>
+  <div>
+    <div class="al-title">テスト投稿</div>
+    <div class="al-desc">テスト用記事です</div>
+  </div>
+  <div class="al-date">2026.03.25</div>
+</a>
+  </main>
+  <aside>
+    
+    <div class="side-blk">
+      <div class="side-head">週間ランキング <span class="side-en">Ranking</span></div>
+      
+<a class="rank-item" href="/deals/uber-eats-promotion-code/">
+  <div class="rank-num top">01</div>
+  <div class="rank-title">Uber Eats プロモーションコード｜初回から4回¥1,500 OFFの使い方と注意点【2026年最新】</div>
+</a>
+<a class="rank-item" href="/deals/test-draft/">
+  <div class="rank-num top">02</div>
+  <div class="rank-title">テスト投稿</div>
+</a>
+    </div>
+  </aside>
+</div>
+<footer id="sf">
+  <div class="sf-i">
+    <div class="sf-logo"><span>●</span>男塾</div>
+    <div class="sf-tag">Referral Codes &amp; Deals — Curated</div>
+    <div class="sf-links">
+      <a href="/sitemap.xml">サイトマップ</a>
+    </div>
+    <div class="sf-copy"><span>&copy; 2026 男塾</span><div class="sf-dot"></div></div>
+  </div>
+</footer>
 </body>
 </html>
