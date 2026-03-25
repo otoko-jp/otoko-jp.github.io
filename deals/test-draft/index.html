@@ -54,40 +54,43 @@ a{color:inherit;text-decoration:none}
 .sf-dot{width:6px;height:6px;border-radius:50%;background:var(--red)}
 @media(max-width:600px){.gh-i{padding:0 1rem}.gnav a{padding:0 .5rem;font-size:.62rem}.logo-tag{display:none}}
 
-.art-outer{display:grid;grid-template-columns:1fr 260px;max-width:1200px;margin:0 auto;padding:0 1.5rem;gap:3.5rem}
+.art-outer{display:grid;grid-template-columns:1fr 240px;max-width:1200px;margin:0 auto;padding:0 1.5rem;gap:3.5rem}
 .art-main{padding:2.5rem 0 4rem}
 .art-cat{font-family:'Inter',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red-bright);margin-bottom:1rem}
-.art-main h1{font-size:1.8rem;font-weight:900;line-height:1.4;letter-spacing:.02em;margin-bottom:.75rem}
-.art-byline{font-family:'Inter',sans-serif;font-size:.7rem;color:var(--ghost);letter-spacing:.1em;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid var(--ash);display:flex;gap:1.5rem}
-.prose h2{font-size:1.05rem;font-weight:700;letter-spacing:.04em;margin:2.5rem 0 1rem;display:flex;align-items:center;gap:.7rem}
+.art-main h1{font-size:1.8rem;font-weight:900;line-height:1.4;letter-spacing:.02em;margin-bottom:.75rem;color:var(--ink)}
+.art-byline{font-family:'Inter',sans-serif;font-size:.7rem;color:var(--smoke);letter-spacing:.1em;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--ash);display:flex;gap:1.5rem}
+.toc-box{background:var(--white);border:1px solid var(--ash);border-left:3px solid var(--red);padding:1.2rem 1.4rem;margin-bottom:2.5rem}
+.toc-box-label{font-family:'Inter',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--ink);margin-bottom:.8rem}
+.toc-box-list{list-style:none;counter-reset:none}
+.toc-box-list li{padding:.35rem 0;border-bottom:1px solid var(--ash)}
+.toc-box-list li:last-child{border-bottom:none}
+.toc-box-list a{font-size:.88rem;font-weight:400;color:var(--ink);transition:color .15s}
+.toc-box-list a:hover{color:var(--red)}
+.prose h2{font-size:1.1rem;font-weight:700;letter-spacing:.04em;margin:2.5rem 0 1rem;display:flex;align-items:center;gap:.7rem;color:var(--ink)}
 .prose h2::before{content:'';display:block;width:4px;height:1.1em;background:var(--red);flex-shrink:0}
-.prose h3{font-size:.95rem;font-weight:700;color:var(--smoke);margin:1.8rem 0 .6rem;letter-spacing:.04em}
-.prose p{font-size:.93rem;font-weight:300;color:#3a3530;margin-bottom:1.1rem;line-height:1.9}
+.prose h3{font-size:1rem;font-weight:700;color:#333;margin:1.8rem 0 .6rem;letter-spacing:.04em}
+.prose p{font-size:.95rem;font-weight:400;color:#222;margin-bottom:1.1rem;line-height:1.95}
 .prose strong{font-weight:700;color:var(--ink)}
 .prose a{color:var(--red);text-decoration:underline}
-.prose code{background:var(--ash);padding:.15rem .4rem;font-family:'Inter',monospace;font-size:.88em;letter-spacing:.05em}
+.prose code{background:var(--ash);padding:.15rem .4rem;font-family:'Inter',monospace;font-size:.9em;letter-spacing:.05em;color:var(--ink)}
 .prose ul,.prose ol{margin:1rem 0;padding-left:1.4rem}
-.prose li{margin-bottom:.4rem;font-size:.93rem;font-weight:300;color:#3a3530}
+.prose li{margin-bottom:.4rem;font-size:.95rem;font-weight:400;color:#222}
 .prose hr{border:none;border-top:1px solid var(--ash);margin:2rem 0}
-.prose table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.88rem}
-.prose th{font-family:'Inter',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--smoke);padding:.7rem 1rem;border-bottom:1px solid var(--ash);text-align:left}
-.prose td{padding:.8rem 1rem;border-bottom:1px solid var(--ash);font-weight:300;color:#3a3530}
+.prose table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
+.prose th{font-family:'Inter',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#444;padding:.7rem 1rem;border-bottom:2px solid var(--ash);text-align:left;background:var(--white)}
+.prose td{padding:.8rem 1rem;border-bottom:1px solid var(--ash);font-weight:400;color:#222}
 .art-aside{padding:2.5rem 0 4rem;border-left:1px solid var(--ash);padding-left:2.5rem}
 .side-block{margin-bottom:2.5rem}
-.aside-label{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--ghost);margin-bottom:.9rem}
-.toc-list{list-style:none}
-.toc-list li{font-size:.82rem;font-weight:300;padding:.4rem 0;border-bottom:1px solid var(--ash);color:var(--smoke)}
-.toc-list a{color:var(--smoke);transition:color .15s}
-.toc-list a:hover{color:var(--ink)}
+.aside-label{font-family:'Inter',sans-serif;font-size:.6rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--smoke);margin-bottom:.9rem}
 .rel-list{list-style:none}
-.rel-list li{font-size:.82rem;font-weight:300;padding:.5rem 0;border-bottom:1px solid var(--ash);line-height:1.5}
-.rel-list a{color:var(--smoke);transition:color .15s}
-.rel-list a:hover{color:var(--ink)}
-.bc{font-family:'Inter',sans-serif;font-size:.72rem;color:var(--ghost);letter-spacing:.08em;max-width:1200px;margin:0 auto;padding:.8rem 1.5rem;display:flex;align-items:center;gap:.5rem}
-.bc a{color:var(--ghost)}
+.rel-list li{font-size:.85rem;font-weight:400;padding:.5rem 0;border-bottom:1px solid var(--ash);line-height:1.5;color:#222}
+.rel-list a{color:#222;transition:color .15s}
+.rel-list a:hover{color:var(--red)}
+.bc{font-family:'Inter',sans-serif;font-size:.72rem;color:var(--smoke);letter-spacing:.08em;max-width:1200px;margin:0 auto;padding:.8rem 1.5rem;display:flex;align-items:center;gap:.5rem}
+.bc a{color:var(--smoke)}
 .bc span{color:var(--red)}
 @media(max-width:900px){.art-outer{grid-template-columns:1fr}.art-aside{display:none}}
-@media(max-width:600px){.art-outer{padding:0 1rem}.art-main h1{font-size:1.4rem}}
+@media(max-width:600px){.art-outer{padding:0 1rem}.art-main h1{font-size:1.45rem}}
 </style>
 </head>
 <body>
@@ -112,12 +115,12 @@ a{color:inherit;text-decoration:none}
     <div class="art-byline">
       <span><time datetime="2026-03-25">2026年3月25日</time></span>
     </div>
+    
     <div class="prose">
 <p>テスト本文です。</p>
 </div>
   </main>
   <aside class="art-aside">
-    
     
 <div class="side-block">
   <div class="aside-label">関連記事</div>
