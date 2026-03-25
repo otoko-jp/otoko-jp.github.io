@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>お問い合わせ | 男塾</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+<meta name="description" content="お問い合わせ | 男塾">
+<link rel="canonical" href="https://otoko-jp.github.io/contact/">
+<style>
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+:root{--ink:#0c0c0c;--paper:#f5f2ec;--white:#ffffff;--ash:#e4e0d8;--smoke:#9a9489;--ghost:#c8c3ba;--red:#b91c1c;--red2:#7f1d1d;--red-bright:#f05050}
+body{font-family:'Noto Serif JP','Hiragino Mincho ProN',serif;background:var(--paper);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+#gh{position:sticky;top:0;z-index:200;background:var(--ink);border-bottom:2px solid var(--red)}
+.gh-i{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.5rem;height:56px}
+.logo{display:flex;align-items:center;gap:.5rem}
+.logo-mark{width:26px;height:26px;background:var(--red);border-radius:50%;flex-shrink:0}
+.logo-name{font-family:'Yuji Syuku',serif;font-size:1.75rem;color:var(--white);letter-spacing:.06em;line-height:1}
+.logo-tag{font-family:'Inter',sans-serif;font-size:.55rem;font-weight:500;color:#ccc;letter-spacing:.18em;text-transform:uppercase;margin-left:.3rem;align-self:flex-end;margin-bottom:.15rem}
+.gnav{display:flex;align-items:center;height:100%}
+.gnav a{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:#fff;padding:0 .9rem;height:56px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:border-color .15s}
+.gnav a:hover{border-bottom-color:var(--red)}
+.gnav-grey{color:var(--red-bright) !important;border-left:1px solid #2a2a2a;margin-left:.5rem;padding-left:1.2rem !important;font-size:.65rem !important;letter-spacing:.12em !important;opacity:.8}
+.gnav-grey:hover{opacity:1;border-bottom-color:var(--red-bright) !important}
+#cb{background:#161616;border-bottom:1px solid #2a2a2a;overflow-x:auto;scrollbar-width:none}
+#cb::-webkit-scrollbar{display:none}
+.cb-i{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex}
+.ct{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.06em;color:#eee;padding:.65rem 1rem;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.ct:hover{color:var(--white);border-bottom-color:var(--red-bright)}
+.ct.hot{color:var(--red-bright)}
+#sf{background:var(--ink);color:#888;padding:2.5rem 1.5rem 2rem;border-top:2px solid var(--red);margin-top:3rem}
+.sf-i{max-width:1200px;margin:0 auto}
+.sf-logo{font-family:'Yuji Syuku',serif;font-size:1.9rem;color:var(--white);letter-spacing:.06em;margin-bottom:.25rem}
+.sf-logo span{color:var(--red);margin-right:.4rem}
+.sf-tag{font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#444;margin-bottom:1.5rem}
+.sf-links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-bottom:1.5rem}
+.sf-links a{font-family:'Inter',sans-serif;font-size:.66rem;letter-spacing:.08em;color:#555;transition:color .15s}
+.sf-links a:hover{color:var(--white)}
+.sf-copy{font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.1em;color:#333;border-top:1px solid #222;padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center}
+.sf-dot{width:6px;height:6px;border-radius:50%;background:var(--red)}
+@media(max-width:600px){.gh-i{padding:0 1rem}.gnav a{padding:0 .5rem;font-size:.62rem}.logo-tag{display:none}}
+
+.static-wrap{max-width:800px;margin:0 auto;padding:3rem 1.5rem 5rem}
+.static-wrap h1{font-size:1.6rem;font-weight:900;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--ash)}
+.static-wrap h2{font-size:1.05rem;font-weight:700;margin:2.2rem 0 .8rem;color:var(--ink)}
+.static-wrap p{font-size:.92rem;color:#333;line-height:1.95;margin-bottom:1rem}
+.static-wrap ul{padding-left:1.4rem;margin-bottom:1rem}
+.static-wrap li{font-size:.92rem;color:#333;line-height:1.8;margin-bottom:.3rem}
+.static-wrap a{color:var(--red)}
+@media(max-width:600px){.static-wrap{padding:2rem 1rem 4rem}}
+</style>
+</head>
+<body>
+<header id="gh">
+  <div class="gh-i">
+    <a class="logo" href="/">
+      <div class="logo-mark"></div>
+      <span class="logo-name">男塾</span>
+    </a>
+    <nav class="gnav">
+      <a href="/">新着</a>
+      <a href="/">紹介コード</a>
+      <a href="https://otoko-jp.github.io/ura-otoko-jp.github.io" class="gnav-grey" target="_blank" rel="noopener">▪ 裏男塾</a>
+    </nav>
+  </div>
+</header>
+<div class="static-wrap">
+  <h1>お問い合わせ</h1>
+  
+<p>当サイトへのお問い合わせは、以下よりお願いします。</p>
+<h2>対応できるお問い合わせ</h2>
+<ul>
+  <li>掲載情報の誤り・古い情報の指摘</li>
+  <li>紹介コードに関するご質問</li>
+  <li>記事内容に関するご意見・ご要望</li>
+</ul>
+<h2>対応できないお問い合わせ</h2>
+<ul>
+  <li>各サービスの利用方法に関するサポート（各サービスの公式サポートへお問い合わせください）</li>
+  <li>紹介コードが使えない場合のサービス側への問い合わせの代行</li>
+</ul>
+<h2>お問い合わせ方法</h2>
+<p>お問い合わせは <a href="https://x.com" target="_blank" rel="noopener">X（旧Twitter）のDM</a> よりお願いします。内容によってはご返答できない場合もあります。あらかじめご了承ください。</p>
+
+</div>
+<footer id="sf">
+  <div class="sf-i">
+    <div class="sf-logo"><span>●</span>男塾</div>
+    <div class="sf-links">
+      <a href="/">トップに戻る</a>
+      <a href="/privacy/">プライバシーポリシー</a>
+      <a href="/disclaimer/">免責事項</a>
+      <a href="/contact/">お問い合わせ</a>
+    </div>
+    <div class="sf-copy"><span>&copy; 2026 男塾</span><div class="sf-dot"></div></div>
+  </div>
+</footer>
+</body>
+</html>
